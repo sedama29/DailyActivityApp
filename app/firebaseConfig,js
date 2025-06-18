@@ -1,0 +1,17 @@
+import { initializeApp, getApps } from 'firebase/app';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA-fsTNOyAfSsNTrOtn27p4zVBywRorTrw",
+  authDomain: "dailyactivityapp-50547.firebaseapp.com",
+    databaseURL: "https://dailytodoapp-614ea-default-rtdb.firebaseio.com", // ✅ Add this line!
+  projectId: "dailyactivityapp-50547",
+  storageBucket: "dailyactivityapp-50547.firebasestorage.app",
+  messagingSenderId: "1000469253725",
+  appId: "1:1000469253725:web:899538f61ab559464547b4"
+};
+
+if (!getApps().length) {
+  initializeApp(firebaseConfig);
+}
+
+export default firebaseConfig;
